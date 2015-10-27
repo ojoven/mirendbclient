@@ -1,0 +1,15 @@
+{
+  "name": "ojoven/mirendb_client",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/ojoven/mirendb"
+    }
+  ],
+  "require": {
+    "ojoven/mirendb": "dev-master"
+  },
+  "scripts": {
+    "post-install-cmd": "php vendor/ojoven/mirendb/scripts/post-install-cmd.php"
+  }
+}
