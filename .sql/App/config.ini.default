@@ -1,0 +1,95 @@
+; THIS IS THE CONFIGURATION FILE
+; Here you can set up the different options for the custom features of your project...
+; ...like what protocol/output you'll be using, what code control version you'll use (Git, SVN...), etc.
+; NOTE: [nyi] = not yet implemented
+
+
+; GLOBAL CONFIGURATIONS
+; We need to configure the most important features
+[global]
+
+; BEHAVIOUR
+; We will define the behaviour for the project here
+; options: both_file, bothDatabase, controlVersion (default = controlVersion)
+; both_file -> behave as a tool to compare 2 .sql files
+; both_database -> behave as a tool to compare 2 databases
+; standard_control_version -> behave as a tool where to track revisions of a single database and commit/update them to/from a repository
+; laravel_control_version [nyi] -> behave as a tool to track SQL revisions in the format of Laravel migrations
+; flyway_control_version [nyi] -> behave as a tool to track SQL revisions in the format of Flyway migrations
+; dbv_control_version [nyi] -> behave as a tool to track SQL revisions in the format of Dbv revisions
+behaviour=**behaviour**
+
+; DATA
+; Shall we compare and extract the diff just of the tables schema, or to the data, too
+; options: false, true (default = true)
+data=**data**
+
+; LOG
+; Do you want the script to log what the App is doing
+log=**log**
+
+; ORIGIN (REVISIONS)
+; Data for the connection to the revisions database
+; We'll create a revisions database with the previous revisions...
+; ...so we can compare the schema and data between both of them. Your user must have granted permissions to create databases
+[origin]
+host=**origin_host**
+port=**origin_port**
+user=**origin_user**
+password=**origin_password**
+database=**origin_database**
+
+; TARGET
+; Data for the connection to the target database
+; This will be the database that will be under control version
+[target]
+host=**target_host**
+port=**target_port**
+user=**target_user**
+password=**target_password**
+database=**target_database**
+
+; STAGING
+; Data for the connection to the staging database
+[staging]
+host=**staging_host**
+port=**staging_port**
+user=**staging_user**
+password=**staging_password**
+database=**staging_database**
+
+; CUSTOM CONFIGURATIONS
+
+; CONTROL VERSION BEHAVIOUR
+[control_version]
+path_to_revisions=revisions/
+control_version=**control_version**
+add_export_hook=**export_hook**
+add_import_hook=**import_hook**
+; Keep Revisions Database. Faster having set it to 1.
+keep_revisions_db=1
+
+; BOTH FILE BEHAVIOUR
+; Please uncomment these if you're going to use it with the both file behaviour
+; [both_file]
+; origin_file=/path/to/origin.sql
+; target_file=/path/to/target.sql
+
+; WORDPRESS ABSOLUTE URLs AND PATHS
+[wordpress]
+is_wordpress=**is_wordpress**
+url_local=**wp_url_local**
+path_local=**wp_path_local**
+url_staging=**wp_url_staging**
+path_staging=**wp_path_staging**
+
+
+; BOTH DATABASE BEHAVIOUR
+
+; BINs
+; Useful if you use XAMPP or similar
+; For XAMPP users, you should use /opt/lampp/bin/mysql and /opt/lampp/bin/mysqldump paths
+[bins]
+php=**php_path**
+mysql=**mysql_path**
+mysqldump=**mysqldump_path**

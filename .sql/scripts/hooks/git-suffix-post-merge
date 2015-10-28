@@ -1,0 +1,12 @@
+#!/bin/bash
+# TODO: Check if already added
+
+# Let's see if there's been a commit-msg hook
+rootPath=$(readlink -f ./$(git rev-parse --show-cdup))
+FILE=$rootPath/.sql/.flagcommit
+if [ -f $FILE ];
+then
+   rm $FILE
+   # Let's call the export revision script
+   **php_path** $rootPath/.sql/import_revisions.php local
+fi

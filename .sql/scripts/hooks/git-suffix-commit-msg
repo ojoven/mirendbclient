@@ -1,0 +1,18 @@
+#!/bin/bash
+# TODO: Check if already added
+
+# based on http://stackoverflow.com/questions/3284292/can-a-git-hook-automatically-add-files-to-the-commit
+
+# Get the root path of the project
+rootPath=$(readlink -f ./$(git rev-parse --show-cdup))
+message=$(<$rootPath/$1)
+
+# If the commit message includes --database suffix we launch the script
+if [[ $message == *"--database"* ]]
+then
+  # Let's call the export revision script
+  **php_path** $rootPath/.sql/export_revision.php
+
+  # And we'll tell the post-merge hook that there's a commit pending
+  touch $rootPath/.sql/.flagcommit
+fi

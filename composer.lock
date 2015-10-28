@@ -1,0 +1,42 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "6eea6b134f1533b1fa2579727926e6e5",
+    "content-hash": "ec829108cfcda703e16ac601c3acf2c3",
+    "packages": [
+        {
+            "name": "ojoven/mirendb",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ojoven/mirendb.git",
+                "reference": "0a07bf672e67549c4f1569b54124a436abbe5e6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ojoven/mirendb/zipball/0a07bf672e67549c4f1569b54124a436abbe5e6c",
+                "reference": "0a07bf672e67549c4f1569b54124a436abbe5e6c",
+                "shasum": ""
+            },
+            "type": "library",
+            "support": {
+                "source": "https://github.com/ojoven/mirendb/tree/master",
+                "issues": "https://github.com/ojoven/mirendb/issues"
+            },
+            "time": "2015-10-28 15:14:56"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "ojoven/mirendb": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
