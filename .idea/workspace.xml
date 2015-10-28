@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/postreceive.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.020594966" vertical-offset="0" max-vertical-offset="874">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -102,7 +102,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mapleleaffoods" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../conagra" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -133,6 +133,9 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="855e2332-c96c-48b4-9a8e-287c64c8fe4e" name="Default" comment="" />
@@ -191,7 +194,7 @@
     <entry file="file://$PROJECT_DIR$/postreceive.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.020594966" vertical-offset="0" max-vertical-offset="874">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>
